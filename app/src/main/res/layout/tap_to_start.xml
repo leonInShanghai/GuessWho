@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/hi_title"
+            android:textSize="24sp" android:textColor="#FFFFFF"
+            android:id="@+id/hi_title"
+            android:layout_margin="6dip"/>
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/hi_tap_to_start"
+            android:textSize="24sp"
+            android:textColor="#FF0000"
+            android:id="@+id/hi_tap_to_start"
+            android:gravity="center"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <LinearLayout android:background="@drawable/bg_bottom"
+       android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <FrameLayout android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@string/hi_sample_question"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="22dp"
+                    android:id="@+id/hi_sample_question"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"/>
+                <!--这是那个隐藏的textView-->
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/hi_tip_msg"
+                    android:textSize="14sp"
+                    android:textColor="#FF8C00"
+                    android:id="@+id/hi_tip_msg"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="invisible"
+                    android:lines="2"/>
+             </FrameLayout>
+
+            <Button android:background="@drawable/tip_button_bg"
+                android:clickable="false"
+                android:layout_height="wrap_content"
+                android:layout_width="30dp"
+                android:text="@string/hi_tip_cnt"
+                android:textSize="14sp"
+                android:textColor="#FF8C00"
+                android:id="@+id/hi_tip_button"
+                android:gravity="center"
+                android:layout_gravity="right"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/star_bigger"
+                android:layout_marginRight="16dp"
+                />
+
+            <FrameLayout android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical">
+                <TextView android:background="@drawable/w_bg1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@string/hi_sample_answer"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    />
+                <ImageView android:background="@drawable/bn_jt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hi_ans_button"
+                    android:layout_marginTop="1dp" />
+            </FrameLayout>
+    </LinearLayout>
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/small_button_bg3"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:id="@+id/hi_skip_button"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginLeft="75dp">
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/hi_help_1"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF" />
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/hi_help_2"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF" />
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/hi_help_3"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF" />
+
+        <ImageView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/logo"
+            android:layout_marginRight="10dip"/>
+    </LinearLayout>
+
+</LinearLayout>

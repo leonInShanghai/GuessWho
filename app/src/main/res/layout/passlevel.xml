@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@drawable/bg">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_weight="1"
+		android:layout_height="match_parent"
+		android:gravity="center_vertical">
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_gravity="center_vertical"
+			android:textColor="#FFFFFF"
+			android:textSize="32sp"
+			android:id="@+id/passLevelTitle"
+			android:text="@string/PassLevelTitle" />
+		<TextView
+			android:layout_width="match_parent"
+			android:textColor="#FFFFFF"
+			android:layout_height="wrap_content"
+			android:id="@+id/PassLevelPrompt"
+			android:textStyle="normal"
+			android:gravity="center"
+			android:layout_marginTop="30dp"
+			android:layout_marginBottom="10dp"
+			android:text="@string/PassLevelPrompt1" />
+		<TextView
+			android:textStyle="normal"
+			android:textColor="#FFFFFF"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/PassLevelClick"
+			android:gravity="center"
+			android:layout_gravity="center_vertical"
+			android:text="@string/PassLevelClick" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:orientation="horizontal"
+		android:layout_weight="1"
+		android:gravity="left">
+		<ImageView
+			android:layout_gravity="left"
+			android:layout_marginLeft="10dp"
+			android:src="@drawable/logo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">Guess who</string>
+        <string name="options_languagei">조선어</string>
+
+        <!--主菜单  https://blog.csdn.net/myth13141314/article/details/62037194-->
+        <string name="mainmenu_play">개시</string>
+        <string name="mainmenu_multi_play">다인 게임</string>
+        <string name="mainmenu_options">옵션</string>
+        <string name="mainmenu_score">분수</string>
+        <string name="mainmenu_facebook_fan_us">미세하다</string>
+        <string name="mainmenu_exit">퇴출</string>
+        <string name="mainmenu_best_score">최고점:</string>
+        <string name="mainmenu_best_player_name">Leon</string>
+        <string name="mainmenu_points">순위: 1</string>
+        <string name="player_name_fill">당신의 이름을 입력해 주십시오.</string>
+        <string name="player_name_menu">메뉴.</string>
+        <string name="player_name_ok">그래.</string>
+        <string name="player_name_skip">건너뛰다</string>
+        <string name="options_title">옵션</string>
+        <string name="options_language">언어</string>
+        <string name="options_language_english">English</string>
+        <string name="options_language_chinese">中&#160;&#160;文</string>
+        <string name="options_language_trandition_chinese">조선어</string>
+        <string name="options_music">배경 음악</string>
+        <string name="options_sound">게임 소리</string>
+        <string name="options_on">On&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+        <string name="options_off">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Off</string>
+        <string name="hi_title">안녕하세요. %s!</string>
+        <string name="hi_tap_to_start">시작 게임 시작!</string>
+        <string name="hi_sample_question">파파 소프트웨어의 영광 출품!</string>
+        <string name="hi_sample_answer">Guess Who</string>
+        <string name="hi_help_1">1. 3 번 힌트 사용 가능!</string>
+        <string name="hi_help_2">2. 슬라이딩 화살표 버튼 정답!</string>
+        <string name="hi_help_3">3. 한 번 넘길 수 있다!</string>
+        <string name="hi_tip_msg">게임 소프트웨어 생기는. 뿌잉뿌잉.</string>
+        <string name="hi_tip_cnt">제시\n0/3</string>
+        <string name="just_skip">건너뛰다</string>
+        <string name="contact_info">Any questions or feedback, please contact \n henanleon@126.com </string>
+        <string name="information_copyright">©2018 BoBo Ltd.</string>
+        <string name="information"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Guess Who is an entertaining,
+        educational and fun quiz game. The game has over 1000 questions from 6 categories: Sports, Politics,
+        Movies, Music, Business and History. Guess who is the first quiz game with Chinese and international
+        content and with 3 language options (English, traditional and simplified Chinese).\n \n
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;In the game player has to
+        guess who is the person in question as quickly as possible. Player gets randomly
+        questions from different categories with three answering alternatives, from which he/she
+        chooses the correct one by sliding the arrow. The game is against time, so player who answers
+        all the questions correctly and fastest, gets the best score.\n \n
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;The game has 3
+        different levels. In first level player has to answer 10 questions correctly in order to
+        get to the next level. In second level player has to pass 8 questions and in third level 5
+        questions. \n \n
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;The player can take a tip 3 times within one
+        game (max 2 tips per question),
+        skip the question once and have one wrong answer within one game.
+        If the player chooses the wrong answer second time the game ends. Using tips, skip
+        and wrong answer will reduce player’s points from max score. Tips and skips are selected
+        by clicking, the answer alternative by sliding the arrow from left to right.\n \n
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        Multiplay enables 2-4 different players to compete with one device. Just fill in the names
+        of the players and hand the device to your friend after answering your own question.
+        There’s no timer in multiplay.\n \n     &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        This game was created by BeiZ Ltd. Please, visit
+        our www-site for more information about us.\n
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;( https://weibo.com/leonbruce ) </string>
+        <string name="main_view_unit_min">min</string>
+        <string name="main_view_unit_sec">sec</string>
+        <string name="main_view_end">끝맺다</string>
+        <string name="main_view_you_are_right">Correct!</string>
+        <string name="main_view_points_title">Points:</string>
+        <string name="persion_type_name_1">Music</string>
+        <string name="persion_type_name_2">Sports</string>
+        <string name="persion_type_name_3">Movies</string>
+        <string name="persion_type_name_4">Politics</string>
+        <string name="PassLevelTitle">%s, Well done!</string>
+        <string name="PassLevelPrompt1">너는 첫 번째 관문을 통과하고, 또한 유명한 길이다！</string>
+        <string name="PassLevelPrompt2">당신은 두 번째 관문을 통과하고, 또한 유명한 길입니다!</string>
+        <string name="PassLevelClick">화면을 누르십시오.</string>
+        <!--<string name="gameover">게임 종료. 화면 클릭해주세요.</string>-->
+        <string name="gameover">게임이 끝나고 클릭이 차트에들 어간다.</string>
+        <string name="ranking">중국 대륙 랭킹</string>
+        <string name="nodatayet">아직 도전이 없 네요.</string>
+        <string name="aheadover">대장부가 문제를 두 번 넘겼습니다.</string>
+        <string name="followwechat">공식 마이크로 편지' </string>
+        <!--<string name="hi_tip_count">제시\n%s/3</string>-->
+
+</resources>

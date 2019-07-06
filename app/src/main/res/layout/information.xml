@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:background="@drawable/bg"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:orientation="vertical">
+
+    <LinearLayout  android:background="@drawable/bg_help_box"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_weight="1"
+        >
+        <ScrollView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:text="Guess who v1.0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:layout_weight="1" />
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@string/information"
+                    android:textColor="#FFFFFF"
+                    android:layout_weight="1"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </ScrollView>
+        <TextView android:layout_height="80dp"
+            android:layout_width="match_parent"
+            android:text="@string/contact_info"
+            android:textColor="#FF0000"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+        <Button android:layout_marginLeft="50dp"
+            android:layout_width = "wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/small_button"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="@string/player_name_menu"
+            android:id="@+id/information_mainmenu"/>
+
+        <TextView android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="@string/information_copyright"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <ImageView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/logo"
+            android:gravity="center"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+    <!--<ScrollView android:layout_height="197dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_marginRight="25dp"-->
+    <!--android:layout_marginLeft="25dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:scrollbars="none"-->
+    <!--android:background="#00ff00">-->
+    <!--<TextView android:layout_height="match_parent"-->
+        <!--android:layout_width="match_parent"-->
+
+        <!--android:text="Guess who v1.0.200000"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:textSize="14sp"-->
+        <!--android:background="#ff0000"/>-->
+    <!--<TextView android:layout_height="match_parent"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:text="1111"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:textSize="14sp"/>-->
+<!--</ScrollView>-->
+
+
+
+<!--</LinearLayout>-->

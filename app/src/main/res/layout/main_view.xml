@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <!--<FrameLayout android:layout_height="wrap_content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_gravity="center">-->
+
+    <!--<ImageView android:layout_height="wrap_content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_marginTop="12dp"-->
+    <!--android:src="@drawable/bg_top"-->
+    <!--android:paddingTop="12dp"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_top"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_mainview" />
+
+        <!--这个image没有用占位image-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/clock" />
+
+        <TextView
+            android:id="@+id/main_view_min"
+            style="@style/MainViewTimer"
+            android:text="0"
+            android:textColor="#ff0000" />
+
+        <TextView
+            style="@style/MainViewTimer"
+            android:text="@string/main_view_unit_min" />
+
+        <TextView
+            android:id="@+id/mian_view_sec"
+            style="@style/MainViewTimer"
+            android:text="0"
+            android:textColor="#ff0000" />
+
+        <TextView
+            style="@style/MainViewTimer"
+            android:layout_marginRight="5dp"
+            android:text="@string/main_view_unit_sec" />
+
+    </LinearLayout>
+    <!--↑已经搞定-->
+    <!--下部分又分上下结构-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--下部分上边-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!--<ImageView android:layout_height="wrap_content"-->
+            <!--android:layout_width="15dp"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_bottom"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/mainview_person_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/business" />
+
+                        <TextView
+                            android:id="@+id/mainview_person_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Business"
+                            android:textColor="#ffffff" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:layout_width="348dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/mainview_sample_question"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/hi_sample_question"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/mainview_tip_msg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:lines="2"
+                                    android:text="@string/hi_tip_msg"
+                                    android:textColor="#FF8C00"
+                                    android:textSize="14sp"
+                                    android:visibility="invisible" />
+
+                            </FrameLayout>
+
+                            <Button
+                                android:id="@+id/mainview_tip_button"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:background="@drawable/tip_button"
+                                android:gravity="center"
+                                android:textAllCaps="false"
+                                android:text="Tip\n0/3"
+                                android:textColor="#FF8C00"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/mainview_person_decription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lines="2"
+                            android:text="Description"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mainview_player_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:text="Player:Leon"
+                            android:textColor="#FF8C00"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/mainview_total_points"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dip"
+                            android:text="Points:0"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:layout_marginBottom="7dp"
+                            android:src="@drawable/star_bigger" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="7dp"
+                            android:src="@drawable/star_bigger" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="7dp"
+                            android:src="@drawable/star_bigger" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="250dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/mainview_answer_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/w_bg1"
+                                android:gravity="center"
+                                android:paddingLeft="35dp"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:text="@string/hi_sample_answer"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp" />
+                            <!--加上这个LinearLayout是为了做动画-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <guess.bobo.cn.guesswho.component.SlidingButton
+                                    android:id="@+id/mainview_answer_1_button"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="1dp"
+                                    android:background="@drawable/bn_jt1"
+                                    android:gravity="center" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="250dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/mainview_answer_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/w_bg1"
+                                android:gravity="center"
+                                android:paddingLeft="35dp"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:text="@string/hi_sample_answer"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp" />
+                            <!--加上这个LinearLayout是为了做动画-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <guess.bobo.cn.guesswho.component.SlidingButton
+                                    android:id="@+id/mainview_answer_2_button"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="1dp"
+                                    android:background="@drawable/bn_jt1"
+                                    android:gravity="center" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="250dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/mainview_answer_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/w_bg1"
+                                android:gravity="center"
+                                android:paddingLeft="35dp"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:text="@string/hi_sample_answer"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp" />
+                            <!--加上这个LinearLayout是为了做动画-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <guess.bobo.cn.guesswho.component.SlidingButton
+                                    android:id="@+id/mainview_answer_3_button"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="1dp"
+                                    android:background="@drawable/bn_jt1"
+                                    android:gravity="center" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<ImageView android:layout_height="wrap_content"-->
+            <!--android:layout_width="15dp"/>-->
+        </LinearLayout>
+
+        <!--↓ 底部-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/mainview_star_list1"
+                style="@style/MainViewStar2" />
+
+            <ImageView
+                android:id="@+id/mainview_star_list2"
+                style="@style/MainViewStar2" />
+
+            <ImageView
+                android:id="@+id/mainview_star_list3"
+                style="@style/MainViewStar" />
+
+            <ImageView
+                android:id="@+id/mainview_star_list4"
+                style="@style/MainViewStar" />
+
+            <ImageView
+                android:id="@+id/mainview_star_list5"
+                style="@style/MainViewStar" />
+
+            <ImageView
+                android:id="@+id/mainview_star_list6"
+                style="@style/MainViewStar" />
+
+            <ImageView
+                android:id="@+id/mainview_star_list7"
+                style="@style/MainViewStar" />
+
+            <ImageView
+                android:id="@+id/mainview_star_list8"
+                style="@style/MainViewStar" />
+
+            <ImageView
+                android:id="@+id/mainview_star_list9"
+                style="@style/MainViewStar" />
+
+            <ImageView
+                android:id="@+id/mainview_star_list10"
+                style="@style/MainViewStar" />
+
+            <!--占位image没有用只是为了占位用-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/mainview_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/small_button"
+                android:text="@string/just_skip"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/mainview_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/small_button"
+                android:text="@string/main_view_end"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

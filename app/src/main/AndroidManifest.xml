@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="guess.bobo.cn.guesswho">
+    <!--数据库权限不知道有没有用先写上-->
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY"/>
+    <!--webview 用到的权限-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.SplashActivity" android:screenOrientation="landscape">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainMenuActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".activity.PlayerNameActivity" android:screenOrientation="landscape"/>
+        <service android:name=".service.MediaService"/>
+        <activity android:name=".activity.OptionsActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".activity.InformationActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".activity.TapToStartActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".activity.MainViewActivity" android:screenOrientation="landscape"/>
+        <provider  android:authorities="guess.bobo.cn.guesswho.questionprovider"
+            android:name=".providers.QuestionProvider" android:exported="true"/>
+        <activity android:name=".activity.PassLevelActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".activity.UselessActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".activity.RankingListActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".activity.AheadOfTimeActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".activity.MultiPlayActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".activity.WeiboActivity" android:screenOrientation="landscape"/>
+    </application>
+
+</manifest>
